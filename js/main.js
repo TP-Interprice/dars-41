@@ -1,13 +1,13 @@
 let tBody = document.querySelector("tbody")
 let modal = document.getElementById("myModal")
 let editListBtn = document.querySelector(".editList")
-let databases = [
-    {name: "Temurbek", age: "24", group: "1"},
-    {name: "Temurbek", age: "23", group: "2"},
-    {name: "Temurbek", age: "22", group: "3"},
-    {name: "Temurbek", age: "21", group: "4"}
-]
-window.localStorage.setItem('database', JSON.stringify(databases))
+// let databases = [
+//    {name: "Temurbek", age: "24", group: "1"},
+//    {name: "Temurbek", age: "23", group: "2"},
+//    {name: "Temurbek", age: "22", group: "3"},
+//    {name: "Temurbek", age: "21", group: "4"}
+//]
+// window.localStorage.setItem('database', JSON.stringify(databases)) 
 
 let database = window.localStorage.getItem('database')
 database = JSON.parse(database)
