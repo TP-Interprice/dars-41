@@ -82,7 +82,6 @@ addPerson.addEventListener("submit", (event) => {
     database.push(addDatabase)
     renderer(database)
     window.localStorage.setItem('database', JSON.stringify(database))
-    database
     addName.value = null
     addAge.value = null
     addGroup.value = null
