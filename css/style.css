@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+body{
+    background: rgb(44, 43, 43);
+}
+.wrapper {
+    width: 73%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    background-color: #fff;
+}
+
+form {
+    display: flex;
+    width: 100%;
+}
+input{
+    width: 31%;
+    padding: 10px;
+    outline: none;
+}
+.add {
+    width: 67px;
+    padding: 10px;
+
+}
+table{
+    width: 100%;
+    margin-top: 20px;
+    
+}
+table, td, th {
+    border-collapse: collapse;
+    border: 1px solid black;
+    flex-grow: 1;
+    text-align: center;
+}
+th {
+    padding: 8px;
+}
+td {
+    padding: 2px;
+}
+.N {
+    width: 35px;
+}
+
+.btn {
+    width: 30px;
+}
+.dalete {
+    padding: 8px 10px;
+    font-weight: bold;
+}
+
+
+/* -----Modal-------- */
+.modal{
+    padding: 15px;
+    border: 1px solid black;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+}
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 30%;
+    box-shadow: 
+    0 4px 8px 0 rgba(0, 0, 0, 0.294),
+    0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.close {
+    padding: 4px 8px;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.modal-body input{
+    margin-top: 5px;
+    width: 100%;
+}
+
+.modal-footer{
+    display: flex;
+    margin-top: 10px;
+    justify-content: end;
+}
+
+.editList {
+    padding: 3px 6px;
+}
+
+label {
+    color: #888;
+    margin-top: 5px;
+}

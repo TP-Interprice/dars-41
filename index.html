@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form id="addPerson">
+            <input type="text" id="addName" placeholder="Name...">
+            <input type="number" id="addAge" placeholder="Age...">
+            <input type="number" id="addGroup" placeholder="group...">
+            <button class="add">Add</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th class="N">№</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th colspan="3">Group</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Modal desk -->
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Edit</h4>
+                    <button type="button" class="close" data-dismiss="modal">X</button>
+                </div>
+    
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <label for="editName">Name</label>
+                    <input type="text"  id="editName" placeholder="Name..."  >
+                    <label for="editAge">Age</label>
+                    <input type="number"  id="editAge" placeholder="Age..."  >
+                    <label for="editGroup">Group</label>
+                    <input type="number" id="editGroup" placeholder="Group...">
+                </div>
+    
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="editList">Ok</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
